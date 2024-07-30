@@ -1,13 +1,16 @@
 import Link from 'next/link';
 import {
+  Search,
   Home,
   LineChart,
+  List,
   Package,
   Package2,
   PanelLeft,
   Settings,
   ShoppingCart,
-  Users2
+  Users2,
+  Globe
 } from 'lucide-react';
 
 import {
@@ -30,6 +33,7 @@ import { VercelLogo } from '@/components/icons';
 import Providers from './providers';
 import { NavItem } from './nav-item';
 import { SearchInput } from './search';
+import { CardTitle } from '@/components/ui/card';
 
 export default function DashboardLayout({
   children
@@ -49,6 +53,7 @@ export default function DashboardLayout({
           </header>
           <main className="grid flex-1 items-start gap-2 p-4 sm:px-6 sm:py-0 md:gap-4 bg-muted/40">
           {/** Insert Code Here */}
+          <CardTitle>Welcome to College Pathway Hub!</CardTitle>
           </main>
         </div>
       </main>
@@ -68,27 +73,26 @@ function DesktopNav() {
           <span className="sr-only">Acme Inc</span>
         </Link>
 
-        <NavItem href="#" label="Dashboard">
+        <NavItem href="/" label="Dashboard">
           <Home className="h-5 w-5" />
         </NavItem>
 
-        <NavItem href="#" label="Orders">
-          <ShoppingCart className="h-5 w-5" />
+        <NavItem href="/search" label="College Search">
+          <Search className="h-5 w-5" />
         </NavItem>
 
-        <NavItem href="/" label="Products">
-          <Package className="h-5 w-5" />
+        <NavItem href="/list" label="College List">
+          <List className="h-5 w-5" />
         </NavItem>
 
-        <NavItem href="/customers" label="Customers">
-          <Users2 className="h-5 w-5" />
-        </NavItem>
-
-        <NavItem href="#" label="Analytics">
+        <NavItem href="/progress" label="Progress">
           <LineChart className="h-5 w-5" />
         </NavItem>
       </nav>
       <nav className="mt-auto flex flex-col items-center gap-4 px-2 sm:py-5">
+        <NavItem href="/" label="Language">
+          <Globe className="h-5 w-5" />
+        </NavItem>
         <Tooltip>
           <TooltipTrigger asChild>
             <Link
