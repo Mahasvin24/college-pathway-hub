@@ -53,7 +53,7 @@ export default function DashboardLayout({
           </header>
           <main className="grid flex-1 items-start gap-2 p-4 sm:px-6 sm:py-0 md:gap-4 bg-muted/40">
           {/** Insert Code Here */}
-          <CardTitle>Welcome to College Pathway Hub!</CardTitle>
+          {children}
           </main>
         </div>
       </main>
