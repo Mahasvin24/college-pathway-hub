@@ -11,13 +11,15 @@ import {
       <Card>
         <CardContent>
           <br></br>
-          <p title="Go to"><a href="/checklist">Checklist</a></p>
+          <p title="Go to"><a href="/list">List</a></p>
           <p><a href="/search">Search</a></p>
         </CardContent>
         <CardHeader>
-          <CardTitle>Your Colleges</CardTitle>
-          <CardDescription>blah</CardDescription>
+          <CardTitle>Checklist</CardTitle>
+          <CardDescription>Check Your Progess Here</CardDescription>
         </CardHeader>
       </Card>
     );
+      
   }
+  
