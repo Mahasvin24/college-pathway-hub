@@ -10,7 +10,8 @@ import {
   Settings,
   ShoppingCart,
   Users2,
-  Globe
+  Globe,
+  Sparkle
 } from 'lucide-react';
 
 import {
@@ -88,9 +89,13 @@ function DesktopNav() {
         <NavItem href="/progress" label="Progress">
           <LineChart className="h-5 w-5" />
         </NavItem>
+
+        <NavItem href="/ai" label="Ask AI">
+          <Sparkle className="h-5 w-5" />
+        </NavItem>
       </nav>
       <nav className="mt-auto flex flex-col items-center gap-4 px-2 sm:py-5">
-        <NavItem href="/" label="Language">
+        <NavItem href="/language" label="Language">
           <Globe className="h-5 w-5" />
         </NavItem>
         <Tooltip>
@@ -174,19 +179,15 @@ function DashboardBreadcrumb() {
     <Breadcrumb className="hidden md:flex">
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-            <Link href="#">Dashboard</Link>
-          </BreadcrumbLink>
+          <BreadcrumbPage>College</BreadcrumbPage>
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-            <Link href="#">Products</Link>
-          </BreadcrumbLink>
+          <BreadcrumbPage>Pathway</BreadcrumbPage>
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbPage>All Products</BreadcrumbPage>
+          <BreadcrumbPage>Hub</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
