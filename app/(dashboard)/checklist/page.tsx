@@ -11,12 +11,14 @@ import {
       <>
         <Card>
           <CardHeader>
-            <CardTitle>Your Colleges</CardTitle>
-            <CardDescription>blah</CardDescription>
+            <CardTitle>Checklist</CardTitle>
+            <CardDescription>Check Your Progess Here</CardDescription>
           </CardHeader>
           <CardContent>
           </CardContent>
         </Card>
       </>
     );
+      
   }
+  
