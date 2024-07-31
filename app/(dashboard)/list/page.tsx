@@ -8,16 +8,15 @@ import {
   
   export default function CustomersPage() {
     return (
-      <Card>
-        <CardContent>
-          <br></br>
-          <p title="Go to"><a href="/checklist">Checklist</a></p>
-          <p><a href="/search">Search</a></p>
-        </CardContent>
-        <CardHeader>
-          <CardTitle>Your Colleges</CardTitle>
-          <CardDescription>blah</CardDescription>
-        </CardHeader>
-      </Card>
+      <>
+        <Card>
+          <CardHeader>
+            <CardTitle>Your Colleges</CardTitle>
+            <CardDescription>blah</CardDescription>
+          </CardHeader>
+          <CardContent>
+          </CardContent>
+        </Card>
+      </>
     );
   }

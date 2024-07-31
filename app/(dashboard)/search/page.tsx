@@ -5,19 +5,19 @@ import {
   CardHeader,
   CardTitle
 } from '@/components/ui/card';
+import { Fragment } from 'react';
 
 export default function CustomersPage() {
   return (
-    <Card>
-      <CardContent>
-          <br></br>
-          <p title="Go to"><a href="/checklist">Checklist</a></p>
-          <p><a href="/list">List</a></p>
+    <>
+      <Card>
+        <CardHeader>
+          <CardTitle>Search</CardTitle>
+          <CardDescription>Find Your College Here</CardDescription>
+        </CardHeader>
+        <CardContent>
         </CardContent>
-      <CardHeader>
-        <CardTitle>Search</CardTitle>
-        <CardDescription>Find Your College Here</CardDescription>
-      </CardHeader>
-    </Card>
+      </Card>
+    </>
   );
 }
